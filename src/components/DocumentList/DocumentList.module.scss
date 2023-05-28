@@ -1,0 +1,67 @@
+$box-shadow-color: #d4d4d4;
+$list-item-name-color: #414141;
+$list-item-timestamp-color: #6b6b6b;
+
+.list {
+  width: 100%;
+  max-width: 616px;
+  padding-left: 0;
+  box-shadow: inset 0px 0px 0px 1px $box-shadow-color;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px 24px;
+  gap: 20px;
+
+  & + & {
+    box-shadow: inset 0px 1px 0px 0px $box-shadow-color;
+  }
+
+  &__listItemFile {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    flex-grow: 10;
+    min-width: 60%;
+    overflow: hidden;
+  }
+
+  &__listItemFileSVG {
+    width: 36px;
+    height: 48px;
+    flex-shrink: 0;
+    margin-right: 12px;
+  }
+
+  &__listItemDescription {
+    overflow: hidden;
+  }
+
+  &__listItemName {
+    color: $list-item-name-color;
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 1.25rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__listItemTimestamp {
+    display: block;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: $list-item-timestamp-color;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__button {
+    min-width: 120px;
+    flex: 1;
+  }
+}
