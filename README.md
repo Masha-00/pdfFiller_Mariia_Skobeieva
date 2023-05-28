@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 To install the necessary dependencies, run the following command:
 
-### `npm install` or ### `npm i`
+### `npm install`
 
 This command will fetch and install all the required packages listed in the `package.json` file.
 
